@@ -581,12 +581,40 @@ video {
   margin-right: auto;
 }
 
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
 .mb-5 {
   margin-bottom: 1.25rem;
 }
 
-.mt-3 {
-  margin-top: 0.75rem;
+.ml-auto {
+  margin-left: auto;
+}
+
+.mr-auto {
+  margin-right: auto;
+}
+
+.mt-14 {
+  margin-top: 3.5rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
+.mt-7 {
+  margin-top: 1.75rem;
 }
 
 .block {
@@ -609,8 +637,16 @@ video {
   min-height: 3.5rem;
 }
 
+.min-h-64 {
+  min-height: 16rem;
+}
+
 .min-h-96 {
   min-height: 24rem;
+}
+
+.min-h-\[400px\] {
+  min-height: 400px;
 }
 
 .min-h-screen {
@@ -619,6 +655,10 @@ video {
 
 .w-60 {
   width: 15rem;
+}
+
+.w-\[300px\] {
+  width: 300px;
 }
 
 .w-full {
@@ -633,8 +673,8 @@ video {
   max-width: 14rem;
 }
 
-.max-w-96 {
-  max-width: 24rem;
+.max-w-5xl {
+  max-width: 64rem;
 }
 
 .max-w-\[1210px\] {
@@ -645,28 +685,20 @@ video {
   max-width: 170px;
 }
 
-.max-w-screen-xl {
-  max-width: 1280px;
-}
-
-.max-w-\[\] {
-  max-width: ;
-}
-
 .max-w-\[400px\] {
   max-width: 400px;
 }
 
-.max-w-\[40px\] {
-  max-width: 40px;
-}
-
-.max-w-\[470px\] {
-  max-width: 470px;
-}
-
 .max-w-\[480px\] {
   max-width: 480px;
+}
+
+.max-w-\[500px\] {
+  max-width: 500px;
+}
+
+.max-w-screen-xl {
+  max-width: 1280px;
 }
 
 .flex-col {
@@ -675,10 +707,6 @@ video {
 
 .items-center {
   align-items: center;
-}
-
-.justify-normal {
-  justify-content: normal;
 }
 
 .justify-center {
@@ -701,6 +729,10 @@ video {
   border-radius: 50px;
 }
 
+.rounded-full {
+  border-radius: 9999px;
+}
+
 .bg-bgBackground {
   --tw-bg-opacity: 1;
   background-color: rgb(108 92 231 / var(--tw-bg-opacity, 1));
@@ -709,6 +741,10 @@ video {
 .bg-bgWhite {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[linear-gradient\(180deg\2c rgb\(108\2c 92\2c 231\)_50px\2c rgb\(255\2c 255\2c 255\)_50px\)\] {
+  background-image: linear-gradient(180deg,rgb(108,92,231) 50px,rgb(255,255,255) 50px);
 }
 
 .bg-\[linear-gradient\(rgb\(127\2c 2\2c 130\)\2c rgb\(113\2c 70\2c 206\)\)\] {
@@ -723,6 +759,11 @@ video {
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .px-\[15px\] {
@@ -854,7 +895,7 @@ video {
     height: 2px;
     width: 100%;
     --tw-bg-opacity: 1;
-    background-color: rgb(5 5 5 / var(--tw-bg-opacity, 1));
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
     content: '';
   }
 
@@ -922,20 +963,21 @@ video {
     flex-direction: row;
   }
 
+  .md\:flex-row-reverse {
+    flex-direction: row-reverse;
+  }
+
   .md\:items-start {
     align-items: flex-start;
   }
 
-  .md\:items-center {
-    align-items: center;
+  .md\:text-start {
+    text-align: start;
   }
 
-  .md\:justify-normal {
-    justify-content: normal;
-  }
-
-  .md\:justify-center {
-    justify-content: center;
+  .md\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 }
 

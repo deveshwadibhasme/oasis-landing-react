@@ -1,11 +1,13 @@
 import AboutImg from '../assets/about-us.svg'
 import Button from "./Button"
 
+// bg-[linear-gradient(180deg,rgb(108,92,231)_50px,rgb(255,255,255)_50px)]
 const About = () => {
   return (
-     <section className="max-w-screen-xl w-full flex flex-col" id="about">
+     <section className="max-w-screen-xl w-full flex flex-col mt-14" 
+     id="about">
             <h1 
-                className="text-center mx-auto text-4xl text-textBackground mt-3 relative font-extrabold w-60 h-14 custom-border custom-border-2">About Us</h1>
+                className="text-center mt-7 mx-auto text-4xl text-textBackground relative font-extrabold w-60 h-14 custom-border custom-border-2">About Us</h1>
             <div className="flex w-full items-center flex-col md:flex-row">
                 <div className="max-w-2xl px-5 flex flex-col items-center md:items-start">
                     <h2 className='text-2xl text-textBackground font-[600]'>We build IT that build your business<br/></h2>

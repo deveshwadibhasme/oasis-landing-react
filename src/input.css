@@ -13,7 +13,7 @@
     @apply flex flex-col;
   }
   .link::after:hover {
-    @apply absolute bottom-0 right-0 h-[2px] w-full [content:''] bg-bgGray;
+    @apply absolute bottom-0 right-0 h-[2px] w-full [content:''] bg-bgWhite;
   }
   .btn-inner {
     @apply w-full h-full bg-blue-400;
