@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer {
+  * {
+    @apply font-['Poppins',sans-serif];
+  }
+  .nav-2xl {
+    @apply max-w-2xl w-full flex justify-between text-lg;
+  }
+  .nav-lg {
+    @apply flex flex-col;
+  }
+  .link::after:hover {
+    @apply absolute bottom-0 right-0 h-[2px] w-full [content:''] bg-bgGray;
+  }
+  .btn-inner {
+    @apply w-full h-full bg-blue-400;
+  }
+  .btn-rounded-3xl {
+    @apply rounded-3xl;
+  }
+  .arrive{
+    @apply bg-[rgb(108,92,231)];
+  }
+  .custom-border::after{
+    content: '';
+    @apply absolute h-[30px] w-[30px] transition-all duration-[0.8s] left-2 -top-2 bg-bgBackground [clip-path:polygon(0%_0%,_0%_100%,_25%_100%,_25%_25%,_100%_25%,_100%_100%,_25%_100%,_25%_100%,_100%_100%,_100%_0%);]; 
+  }
+  .custom-border-2::before{
+    content: '';
+    @apply absolute h-[30px] w-[30px] transition-all duration-[0.8s] right-2 bottom-2 bg-bgBackground [clip-path:polygon(0_0,_0%_100%,_0_99%,_0_0,_76%_0,_76%_76%,_0_78%,_0_100%,_100%_100%,_100%_0%)]
+  }
+}
+
+@layer base {
+  @font-face {
+    font-family: "Poppins-extraBold", sans-serif;
+    src: url(/src/assets/Poppins-ExtraBold.ttf) format("ttf");
+  }
+}
+
+@layer utilities {
+  .bg-blue-400 {
+    background-color: #63b3ed; /* You can replace this with the appropriate color */
+  }
+}
+
