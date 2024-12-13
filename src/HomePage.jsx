@@ -13,7 +13,6 @@ const HomePage = () => {
         <Service/>
         <Team/>
         <Contact/>
-        <Footer />
     </>
   )
 }

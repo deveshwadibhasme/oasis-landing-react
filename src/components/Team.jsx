@@ -40,11 +40,11 @@ const Team = () => {
           profiles.map((profile) => (
             <motion.div
               initial={{y:20}}
-              animate={{y:0}}
               transition={{duration:0.1*(profile.id-0.4)}}
               whileHover={{ y: -20 }}
+              whileInView={{y:0}}
               key={profile.id}
-              className="max-w-[250px] min-h-[350px] w-full flex flex-col items-center relative overflow-hidden transition-transform duration-[0.8s] shadow-textBackground shadow-[0px_1px_10px_1px] pt-10 pb-0 px-5"
+              className="bubbles-1 max-w-[250px] min-h-[350px] w-full flex flex-col items-center relative overflow-hidden transition-transform duration-[0.8s] shadow-textBackground shadow-[0px_1px_10px_1px] pt-10 pb-0 px-5"
               >
               <div className="text-center">
                 <div className="max-w-[130px] h-[130px] w-full relative transition-transform duration-[0.8s] mx-auto my-0 rounded-[50%] border-[5px] border-solid border-white">

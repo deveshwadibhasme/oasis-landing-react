@@ -4,10 +4,14 @@
 
 @layer {
   * {
-    @apply font-['Poppins',sans-serif];
+    @apply font-['Poppins',sans-serif] 
+    /* outline-dashed outline-green-600; */
+  }
+  #root{
+    overflow-x: hidden;
   }
   .nav-2xl {
-    @apply max-w-2xl w-full hidden md:flex justify-between text-lg;
+    @apply max-w-2xl hidden md:flex gap-10 text-lg;
   }
   .nav-lg {
     @apply flex flex-col absolute top-14 right-0 -translate-y-1/2 min-h-24 w-full text-center bg-bgBackground/60 p-2 gap-4;
@@ -31,6 +35,12 @@
   .custom-border-2::before{
     content: '';
     @apply absolute h-[30px] w-[30px] transition-all duration-[0.8s] right-2 bottom-2 bg-bgBackground [clip-path:polygon(0_0,_0%_100%,_0_99%,_0_0,_76%_0,_76%_76%,_0_78%,_0_100%,_100%_100%,_100%_0%)]
+  }
+  .bubbles-1::before{
+    @apply content-[''] absolute bottom-[-23px] w-[150px] h-[150px] bg-[rgb(122,122,122)] z-[-5] animate-floatMid rounded-[50%] -left-10
+  }
+  .bubbles-1::after{
+    @apply content-[''] absolute w-[150px] h-[150px] bg-[rgb(108,92,231)] z-[-15] animate-floatSlow rounded-[50%] -left-5 -top-10;
   }
 }
 

@@ -4,7 +4,7 @@ import Button from "./Button"
 // bg-[linear-gradient(180deg,rgb(108,92,231)_50px,rgb(255,255,255)_50px)]
 const About = () => {
   return (
-     <section className="max-w-screen-xl w-full flex flex-col mt-14" 
+     <section className="max-w-screen-xl w-full flex flex-col mt-14 mx-[auto]" 
      id="about">
             <h1 
                 className="text-center mt-7 mx-auto text-4xl text-textBackground relative font-extrabold w-60 h-14 custom-border custom-border-2">About Us</h1>

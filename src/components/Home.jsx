@@ -4,7 +4,7 @@ import { motion } from "motion/react"
 
 const Home = () => {
   return (
-    <div className='max-w-screen-xl relative flex flex-col gap-6 justify-center items-center mx-auto min-h-screen bg-[linear-gradient(rgb(127,2,130),rgb(113,70,206))] text-center'>
+    <div className='max-w-screen-2xl -mt-14 relative flex flex-col gap-6 justify-center items-center mx-auto min-h-[110vh] bg-[linear-gradient(rgb(127,2,130),rgb(113,70,206))] text-center'>
       <motion.h1
         initial={{ y: 20, opacity: 0.5 }}
         animate={{ y: 0, opacity: 1 }}

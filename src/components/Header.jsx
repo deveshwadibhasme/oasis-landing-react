@@ -30,8 +30,8 @@ const Header = () => {
     }
 
     return (
-        <header className={`w-screen min-h-14 text-textWhite fixed top-0 z-10 ${bgColor}`}>
-            <div className="flex items-center w-full px-2 min-h-14 justify-between mx-auto">
+        <header className={`max-w-7xl px-4 md:px-2 w-full min-h-14 text-textWhite sticky top-0 mx-auto z-10 ${bgColor}`}>
+            <div className="flex items-center max-w-screen-xl w-full min-h-14 justify-between mx-auto">
                 <motion.div
                     initial={{ x: -20, opacity: 0.5 }}
                     animate={{ x: 0, opacity: 1 }}
@@ -47,7 +47,6 @@ const Header = () => {
                     <Link className='relative link' to={'./service'}>Services</Link>
                     <Link className='relative link' to={'./team'}>Team</Link>
                     <Link className='relative link' to={'./contact'}>Contact</Link>
-                    <i className="fas fa-close"></i>
                 </nav>
                 <FontAwesomeIcon
                     onClick={handleBar} icon={faBars} className='text-[25px] block md:hidden' />
