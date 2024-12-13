@@ -7,10 +7,10 @@
     @apply font-['Poppins',sans-serif];
   }
   .nav-2xl {
-    @apply max-w-2xl w-full flex justify-between text-lg;
+    @apply max-w-2xl w-full hidden md:flex justify-between text-lg;
   }
   .nav-lg {
-    @apply flex flex-col;
+    @apply flex flex-col absolute top-14 right-0 -translate-y-1/2 min-h-24 w-full text-center bg-bgBackground/60 p-2 gap-4;
   }
   .link::after:hover {
     @apply absolute bottom-0 right-0 h-[2px] w-full [content:''] bg-bgWhite;

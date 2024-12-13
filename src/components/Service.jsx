@@ -1,3 +1,4 @@
+import { motion } from "motion/react"
 import Animation from '/src/assets/animaton-service.svg'
 import WebDev from '/src/assets/web-services.svg'
 import Cloud from '/src/assets/cloud-service.svg'
@@ -43,17 +44,22 @@ const Service = () => {
             <div key={serve.title} className={`flex max-w-5xl mx-auto w-full min-h-[400px] items-center justify-between flex-col 
             ${serve.direction === 'left' ? 'md:flex-row-reverse' : 'md:flex-row'}`
             }>
-              <div className="flex flex-col items-center md:items-start max-w-[500px]">
+              <motion.div
+                initial={{ x : (serve.direction==='left') ? -50 : 50 }}
+                whileInView={{ x: 0 }}
+                transition={{ duration: 1.5 }}
+                viewport={{ once: false, duration:0.2}}
+                className="flex flex-col items-center md:items-start max-w-[500px]">
                 <h1
-                  className='text-xl md:text-3xl text-center md:text-start text-textBackground font-[600] mb-4'>{serve.title}
+                  className='text-2xl md:text-3xl text-center md:text-start text-textBackground font-[600] mb-4'>{serve.title}
                 </h1>
                 <p className='mb-3 text-center md:text-start'>{serve.description}</p>
                 <Button
                   bgColor={'bg-bgBackground'}
                   text={'Read More'}
                   borderRadius={'rounded-full'} />
-              </div>
-              <div className={`max-w-[400px] w-full min-h-64 
+              </motion.div>
+              <div className={`max-w-[400px] w-full min-h-64 mt-2
                 ${serve.direction === 'right' ? 'ml-auto' : 'mr-auto'}
                 `}>
                 <img className='w-full h-full' src={serve.image} alt="web-services" />
