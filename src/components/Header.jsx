@@ -30,8 +30,8 @@ const Header = () => {
     }
 
     return (
-        <header className={`max-w-screen-xl w-full min-h-14 text-textWhite fixed top-0 z-10 ${bgColor}`}>
-            <div className="flex items-center mx-auto max-w-[1210px] px-2 min-h-14 justify-between">
+        <header className={`w-screen min-h-14 text-textWhite fixed top-0 z-10 ${bgColor}`}>
+            <div className="flex items-center w-full px-2 min-h-14 justify-between mx-auto">
                 <motion.div
                     initial={{ x: -20, opacity: 0.5 }}
                     animate={{ x: 0, opacity: 1 }}

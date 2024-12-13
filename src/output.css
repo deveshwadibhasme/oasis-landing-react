@@ -564,12 +564,20 @@ video {
   position: fixed;
 }
 
+.absolute {
+  position: absolute;
+}
+
 .relative {
   position: relative;
 }
 
 .top-0 {
   top: 0px;
+}
+
+.bottom-5 {
+  bottom: 1.25rem;
 }
 
 .z-10 {
@@ -579,6 +587,11 @@ video {
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.my-0 {
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .mb-3 {
@@ -637,6 +650,10 @@ video {
   height: 100%;
 }
 
+.h-\[130px\] {
+  height: 130px;
+}
+
 .min-h-14 {
   min-height: 3.5rem;
 }
@@ -647,6 +664,10 @@ video {
 
 .min-h-96 {
   min-height: 24rem;
+}
+
+.min-h-\[350px\] {
+  min-height: 350px;
 }
 
 .min-h-\[400px\] {
@@ -669,6 +690,14 @@ video {
   width: 100%;
 }
 
+.w-screen {
+  width: 100vw;
+}
+
+.w-6\/12 {
+  width: 50%;
+}
+
 .max-w-2xl {
   max-width: 42rem;
 }
@@ -681,12 +710,12 @@ video {
   max-width: 64rem;
 }
 
-.max-w-\[1210px\] {
-  max-width: 1210px;
-}
-
 .max-w-\[170px\] {
   max-width: 170px;
+}
+
+.max-w-\[250px\] {
+  max-width: 250px;
 }
 
 .max-w-\[400px\] {
@@ -705,12 +734,24 @@ video {
   max-width: 1280px;
 }
 
+.max-w-\[130px\] {
+  max-width: 130px;
+}
+
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
 
 .flex-col {
   flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .items-center {
@@ -725,6 +766,14 @@ video {
   justify-content: space-between;
 }
 
+.justify-around {
+  justify-content: space-around;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
 .gap-3 {
   gap: 0.75rem;
 }
@@ -733,12 +782,41 @@ video {
   gap: 1.5rem;
 }
 
+.gap-y-\[15px\] {
+  row-gap: 15px;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .rounded-\[50px\] {
   border-radius: 50px;
 }
 
 .rounded-full {
   border-radius: 9999px;
+}
+
+.rounded-\[50\%\] {
+  border-radius: 50%;
+}
+
+.border {
+  border-width: 1px;
+}
+
+.border-\[5px\] {
+  border-width: 5px;
+}
+
+.border-solid {
+  border-style: solid;
+}
+
+.border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity, 1));
 }
 
 .bg-bgBackground {
@@ -757,6 +835,10 @@ video {
 
 .bg-\[linear-gradient\(rgb\(127\2c 2\2c 130\)\2c rgb\(113\2c 70\2c 206\)\)\] {
   background-image: linear-gradient(rgb(127,2,130),rgb(113,70,206));
+}
+
+.p-5 {
+  padding: 1.25rem;
 }
 
 .px-2 {
@@ -782,6 +864,14 @@ video {
 .py-\[5px\] {
   padding-top: 5px;
   padding-bottom: 5px;
+}
+
+.pb-0 {
+  padding-bottom: 0px;
+}
+
+.pt-10 {
+  padding-top: 2.5rem;
 }
 
 .text-center {
@@ -833,6 +923,10 @@ video {
   font-weight: 300;
 }
 
+.font-semibold {
+  font-weight: 600;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -861,6 +955,12 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
+.shadow-\[0px_1px_10px_1px\] {
+  --tw-shadow: 0px 1px 10px 1px;
+  --tw-shadow-colored: 0px 1px 10px 1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .shadow-md {
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
@@ -872,14 +972,37 @@ video {
   --tw-shadow: var(--tw-shadow-colored);
 }
 
+.shadow-textBackground {
+  --tw-shadow-color: rgb(108,92,231);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .transition-all {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
 
+.transition-transform {
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .duration-200 {
   transition-duration: 200ms;
+}
+
+.duration-\[0\.8s\] {
+  transition-duration: 0.8s;
 }
 
 @layer {
