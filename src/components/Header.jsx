@@ -30,7 +30,7 @@ const Header = () => {
     }
 
     return (
-        <header className={`max-w-6xl px-4 md:px-2 w-full min-h-14 text-textWhite sticky top-0 mx-auto z-10 ${bgColor}`}>
+        <header className={`max-w-7xl px-4 md:px-2 w-full min-h-14 text-textWhite fixed top-0 left-1/2 -translate-x-1/2 z-10 ${bgColor}`}>
             <div className="flex items-center max-w-screen-xl w-full min-h-14 justify-between mx-auto">
                 <motion.div
                     initial={{ x: -20, opacity: 0.5 }}
